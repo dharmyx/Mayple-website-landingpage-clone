@@ -1,0 +1,395 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f55947;
+}
+
+main {
+    border-radius: 20px;
+    max-width: 95%;
+    height: auto;
+    margin: 1rem auto;
+    background-color: #f7fdff;
+    background-image: url(Files/KerryF-bg.png);
+    background-position: right;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+header.heading {
+    max-width: 90%;
+    margin: auto;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 20% auto 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "a b c";
+}
+
+div.logo {
+    grid-area: a;
+    width: 120px;
+    height: 50px;
+    margin: auto 0;
+    background-image: url(Files/maypleLogo.svg);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+div.nav-lists-items {
+    grid-area: b;
+    align-self: center;
+    text-align: center;
+}
+div > a.lists {
+    padding-right: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: .8rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #262626;
+}
+div > a.lists:hover,
+div > a.login:hover {
+    transition: all .7s ease;
+    color: #8c9292;
+}
+div.login-details {
+    margin-left: auto;
+    grid-area: c;
+    align-self: center;
+}
+div > a.login {
+    padding-left: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: .8rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #262626;
+}
+div > a.login-started {
+    margin-left: 20px;
+    padding: .75rem 1.2rem;
+    border: 1px solid #fa5e4e;
+    border-radius: 5px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: .85rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #fa5e4e;
+}
+div > a.login-started:hover {
+    transition: all .8s ease;
+    background-color: #e9775d;
+}
+
+article.landing-page {
+    max-width: 90%;
+    margin: 4rem auto 0;
+    display: grid;
+    grid-template-columns: auto 53%;
+    grid-template-rows: auto;
+    grid-template-areas: "x y";
+}
+
+div.big-text-headline {
+    grid-area: x;
+}
+
+div.small-text-landing {
+    grid-area: y;
+    border: 1px solid rgb(112, 112, 112, .2);
+    border-radius: 15px 0 0 15px;
+    background-color: #ffffff;
+    align-self: flex-end;
+    padding: .7rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "e f g";
+    box-shadow: 0 2px 40px rgb(38, 38, 38, .4);
+}
+div.kerry {
+    grid-area: e;
+    border: 2px dashed rgb(112, 112, 112, .5);
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    align-self: center;
+}
+div.tech {
+    grid-area: f;
+    align-self: center;
+}
+div.marketing {
+    border: 1px solid rgb(112, 112, 112, .5);
+    border-top: none;
+    border-left: none;
+    padding: 2px 10px;
+}
+div.marketing > p,
+div.marketing > h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: .7rem;
+    padding: 3px 0;
+    text-transform: uppercase;
+}
+div.marketing > h4 {
+    font-size: .8rem;
+    font-weight: 500;
+}
+div.client {
+    border: 1px solid rgb(112, 112, 112, .5);
+    border-left: none;
+    border-bottom: none;
+    padding: 2px 10px;
+}
+div.client > p,
+div.client > h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: .7rem;
+    padding: 3px 0;
+    text-transform: uppercase;
+}
+div.client > h4 {
+    font-size: .8rem;
+    font-weight: 500;
+}
+div.years {
+    grid-area: g;
+    align-self: center;
+}
+div.experience {
+    border: 1px solid rgb(112, 112, 112, .5);
+    padding: 2px 10px;
+    border-top: none;
+    border-right: none;
+}
+div.experience > p,
+div.experience > h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: .7rem;
+    padding: 3px 0;
+    text-transform: uppercase;
+}
+div.experience > h4 {
+    font-size: .8rem;
+    font-weight: 500;
+}
+div.average {
+    border: 1px solid rgb(112, 112, 112, .5);
+    border-right: none;
+    border-bottom: none;
+    padding: 2px 10px;
+}
+div.average > p,
+div.average > h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: .7rem;
+    padding: 3px 0;
+    text-transform: uppercase;
+}
+div.average > h4 {
+    font-size: .8rem;
+    font-weight: 500;
+}
+h4.name-kerry {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding:  1rem 2rem 0;
+}
+img.star {
+    width: 100%;
+    padding: .7rem 2rem 1rem;
+}
+
+h1.find {
+    padding: 5rem 0 1rem;
+    font-size: 2.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+form.searchInput {
+    width: auto;
+    margin: 0 0 3rem 0;
+}
+div.search-icon {
+    position: relative;
+    top: 2.5rem;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url(Files/searchicon.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+input[type=search] {
+    width: 60%;
+    font-size: .9rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    padding: 1rem 2.7rem;
+    box-shadow: 0 2px 10px rgb(38, 38, 38, .4);
+    outline: none;
+}
+button.login-getStarted {
+    padding: .85rem 2.1rem;
+    border: 1px solid #fa5e4e;
+    border-radius: 5px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #fa5e4e;
+    box-shadow: 0 2px 10px rgb(38, 38, 38, .4);
+    outline: none;
+    cursor: pointer;
+}
+button.login-getStarted:hover {
+    transition: all .8s ease;
+    background-color: #e9775d;
+}
+div.description {
+    margin: 3rem 0;
+}
+div.checkbox {
+    position: relative;
+    top: 1.4rem;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background-image: url(Files/checkicon.svg);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+p.check-text {
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .85rem;
+}
+
+footer{
+    background-color: rgb(4, 48, 99, .98);
+    padding: 3rem 0;
+    border-radius: 0 0 20px 20px;
+}
+
+div.sponsors {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+div.sponsor-text {
+    width: fit-content;
+    align-self: center;
+}
+div > h4.trusted {
+    color: #b1b1b1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .85rem;
+    font-weight: 500;
+}
+div.sponsors-block {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+div.lula-garden {
+    width: 150px;
+    height: 40px;
+    background-image: url(Files/lulas_garden.svg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 2rem;
+}
+div.eva-metal {
+    width: 100px;
+    height: 40px;
+    background-image: url(Files/eva-metal-art-logo.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    margin: 0 2rem;
+}
+div.nyfw {
+    width: 100px;
+    height: 40px;
+    background-image: url(Files/NyFW.svg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin: 0 2rem;
+}
+div.bcure {
+    width: 100px;
+    height: 40px;
+    background-image: url(Files/bcure.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin: 0 2rem;
+}
+div.jolt {
+    width: 100px;
+    height: 40px;
+    background-image: url(Files/jolt.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin: 0 0 0 2rem;
+}
+
+
+/*MEDIA QUERRY*/
+
+@media (max-width: 1024px) {
+    header.heading {
+        max-width: 95%;
+        grid-template-columns: 15% auto 25%;
+    }
+    article.landing-page {
+        margin: 3rem auto 0;
+    }
+    h1.find {
+        padding: 3rem 0 1rem;
+        font-size: 2.2rem;
+    }
+    h4.name-kerry {
+        font-size: 20px;
+    }
+    div.client {
+        padding: 2px 7px;
+    }
+    div.client > h4 {
+        font-size: .7rem;
+    }
+    div.sponsors {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
