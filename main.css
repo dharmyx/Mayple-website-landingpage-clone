@@ -25,6 +25,12 @@ main {
     background-size: 60%;
     background-repeat: no-repeat;
 }
+div.logo-smallDevice,
+div.menu-wrap,
+div.hamburger,
+div.menu {
+    display: none;
+}
 
 header.heading {
     max-width: 90%;
@@ -106,6 +112,75 @@ article.landing-page {
 div.big-text-headline {
     grid-area: x;
 }
+h1.find {
+    padding: 5rem 0 1rem;
+    font-size: 2.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+form.searchInput {
+    width: auto;
+    margin: 0 0 3rem 0;
+}
+div.search-icon {
+    position: relative;
+    top: 2.5rem;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url(Files/searchicon.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+input[type=search] {
+    width: 60%;
+    font-size: .9rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    padding: 1rem 2.7rem;
+    box-shadow: 0 2px 10px rgb(38, 38, 38, .4);
+    outline: none;
+}
+button.login-getStarted {
+    padding: .85rem 2.1rem;
+    border: 1px solid #fa5e4e;
+    border-radius: 5px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #fa5e4e;
+    box-shadow: 0 2px 10px rgb(38, 38, 38, .4);
+    outline: none;
+    cursor: pointer;
+}
+button.login-getStarted:hover {
+    transition: all .8s ease;
+    background-color: #e9775d;
+}
+div.description {
+    margin: 3rem 0;
+}
+div.checkbox {
+    position: relative;
+    top: 1.4rem;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background-image: url(Files/checkicon.svg);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+p.check-text {
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .85rem;
+}
 
 div.small-text-landing {
     grid-area: y;
@@ -127,6 +202,15 @@ div.kerry {
     border-bottom: none;
     border-left: none;
     align-self: center;
+}
+h4.name-kerry {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding:  1rem 2rem 0;
+}
+img.star {
+    width: 100%;
+    padding: .7rem 2rem 1rem;
 }
 div.tech {
     grid-area: f;
@@ -207,85 +291,6 @@ div.average > h4 {
 div.average > h4 {
     font-size: .8rem;
     font-weight: 500;
-}
-h4.name-kerry {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    padding:  1rem 2rem 0;
-}
-img.star {
-    width: 100%;
-    padding: .7rem 2rem 1rem;
-}
-
-h1.find {
-    padding: 5rem 0 1rem;
-    font-size: 2.8rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-}
-form.searchInput {
-    width: auto;
-    margin: 0 0 3rem 0;
-}
-div.search-icon {
-    position: relative;
-    top: 2.5rem;
-    left: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url(Files/searchicon.svg);
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-}
-input[type=search] {
-    width: 60%;
-    font-size: .9rem;
-    font-family: 'Montserrat Alternates', sans-serif;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 7px;
-    padding: 1rem 2.7rem;
-    box-shadow: 0 2px 10px rgb(38, 38, 38, .4);
-    outline: none;
-}
-button.login-getStarted {
-    padding: .85rem 2.1rem;
-    border: 1px solid #fa5e4e;
-    border-radius: 5px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 500;
-    font-size: .9rem;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #fa5e4e;
-    box-shadow: 0 2px 10px rgb(38, 38, 38, .4);
-    outline: none;
-    cursor: pointer;
-}
-button.login-getStarted:hover {
-    transition: all .8s ease;
-    background-color: #e9775d;
-}
-div.description {
-    margin: 3rem 0;
-}
-div.checkbox {
-    position: relative;
-    top: 1.4rem;
-    left: 0px;
-    width: 25px;
-    height: 25px;
-    background-image: url(Files/checkicon.svg);
-    background-position: center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-}
-p.check-text {
-    margin-left: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: .85rem;
 }
 
 footer{
@@ -391,5 +396,371 @@ div.jolt {
 }
 
 @media (max-width: 768px) {
-    
+    main {
+        max-width: 90%;
+        background-position: top right;
+        background-size: 80%;
+    }
+    div.logo-smallDevice,
+    div.menu-wrap,
+    div.hamburger,
+    div.menu {
+        display: block;
+}
+    header.heading {
+        display: none;
+    }
+
+    div.logo-smallDevice {
+        width: 120px;
+        height: 50px;
+        margin: 2rem 1.5rem;
+        padding: 2.5rem 0;
+        background-image: url(Files/maypleLogo.svg);
+        background-position: center;
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+    div.menu-wrap {
+        position: absolute;
+        top: 3rem;
+        right: 6.5rem;
+        z-index: 1;
+    }
+
+    .menu-wrap .toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+    }
+
+    .menu-wrap .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 45px;
+        height: 45px;
+        padding: .8rem;
+        background: rgb(14, 23, 49, .01);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Hamburger Line */
+
+    .menu-wrap .hamburger>div {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: #0E1731;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+    }
+
+    .menu-wrap .hamburger>div:before,
+    .menu-wrap .hamburger>div:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+    }
+
+    .menu-wrap .hamburger>div:after {
+        top: 5px;
+    }
+
+    .menu-wrap .toggler:checked+.hamburger>div {
+        transform: rotate(135deg);
+        background-color: #ffffff;
+    }
+
+    .menu-wrap .toggler:checked+.hamburger>div:before,
+    .menu-wrap .toggler:checked+.hamburger>div:after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .menu-wrap .toggler:checked:hover+.hamburger>div {
+        transform: rotate(225deg);
+    }
+
+    .menu-wrap .toggler:checked~.menu {
+        visibility: visible;
+    }
+
+    .menu-wrap .toggler:checked~.menu>div {
+        transform: scale(1);
+    }
+
+    .menu-wrap .toggler:checked~.menu>div>div {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+
+    .menu-wrap .menu {
+        position: fixed;
+        top: -3rem;
+        left: 15rem;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .menu-wrap .menu>div {
+        background: rgb(14, 17, 24, .8);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 10rem;
+        transform: translateY(-100rem);
+        transition: all 1.5s ease;
+    }
+
+    .menu-wrap .menu>div>div {
+        text-align: center;
+        max-width: 100%;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        cursor: pointer;
+    }
+    .menu-wrap .menu>div>div>ul {
+        margin: 8rem 0 1rem;
+    }
+    .menu-wrap .menu>div>div>ul>li {
+        list-style: none;
+        color: #fff;
+        font-family: 'Muli', sans-serif;
+        font-size: .9rem;
+        padding: .8rem;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .menu-wrap .menu>div>div>ul>li>a {
+        text-decoration: none;
+        color: #fff;
+    }
+    div.hamburgerMenu-heading {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0 2rem;
+        text-align: left;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    p.menutext > a {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: .8rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    p.menu-getStarted {
+        margin: 1rem 0;
+    }
+    p.menu-getStarted > a {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: .8rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: #ffffff;
+        border: 1px solid #fa5e4e;
+        padding: 10px 20px;
+    }
+    p.menu-getStarted > a:hover {
+        transition: all .8s ease;
+        background-color: #e9775d;
+    }
+    div.lula-garden {
+        width: 100px;
+        height: 40px;
+        background-size: 100%;
+        margin: 0 5px;
+    }
+    div.eva-metal {
+        width: 100px;
+        height: 40px;
+        background-size: 60%;
+        margin: 0 5px;
+    }
+    div.nyfw {
+        width: 100px;
+        height: 40px;
+        background-size: 80%;
+        margin: 0 5px
+    }
+    div.bcure {
+        width: 100px;
+        height: 40px;
+        background-size: 80%;
+        margin: 0 5px;
+    }
+    div.jolt {
+        width: 100px;
+        height: 40px;
+        background-size: 50%;
+        margin: 0 0 0 5px;
+    }
+    article.landing-page {
+        margin: 2rem auto 0;
+    }
+    h1.find {
+        padding: 1rem 0 1rem;
+        font-size: 1.6rem;
+    }
+    div.search-icon {
+        top: 1.9rem;
+        width: 20px;
+        height: 20px;
+    }
+    input[type=search] {
+        width: 100%;
+        font-size: .85rem;
+        padding: .7rem 2rem;
+        margin-bottom: 10px;
+    }
+    button.login-getStarted {
+        padding: .7rem 1rem;
+    }
+    div.small-text-landing {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "e e"
+        "f g";
+    }
+    div.kerry {
+        border-right: none;
+        border-bottom: 1px dashed rgb(112, 112, 112, .3);
+    }
+    h4.name-kerry {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        padding: 1rem .9rem 0;
+    }
+    img.star {
+        width: 50%;
+        padding: .7rem .9rem 0;
+    }
+}
+
+@media (max-width: 425px) {
+
+    main {
+        background-size: 100%;
+    }
+    div.menu-wrap {
+        right: 5.5rem;
+    }
+    .menu-wrap .menu {
+        top: -1.8rem;
+        left: 7rem;
+        width: 100%;
+        height: 80%;
+    }
+    .menu-wrap .menu>div {
+        padding: 0 5rem;
+    }
+    .menu-wrap .menu>div>div>ul {
+        margin: 6rem 0 0;
+    }
+    .menu-wrap .menu>div>div>ul>li {
+        font-size: .8rem;
+        padding: 8px 0;
+    }
+    div.hamburgerMenu-heading {
+        margin: .7rem 0;
+        font-size: .8rem;
+        padding: .7rem 0;
+    }
+    p.menu-getStarted {
+        margin: 1.2rem 0;
+    }
+    p.menu-getStarted > a {
+        padding: 8px 16px;
+    }
+    article.landing-page {
+        display: flex;
+        flex-direction: column;
+    }
+    h1.find {
+        padding: 4rem 0 1rem;
+        font-size: 1.8rem;
+    }
+    form.searchInput {
+        margin: 0 0 1rem 0;
+    }
+    button.login-getStarted {
+        padding: 7px 14px;
+    }
+    div.description {
+        margin: 1rem 0;
+    }
+    div.small-text-landing {
+        margin: 2rem 0 0 0;
+        border-radius: 10px;
+    }
+    h4.name-kerry {
+        font-size: 25px;
+    }
+    div.sponsors {
+        flex-direction: column;
+    }
+    div > h4.trusted {
+        margin-bottom: 1rem;
+    }
+    footer{
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        max-width: 95%;
+        background-size: 100%;
+    }
+    div.menu-wrap {
+        right: 5rem;
+    }
+    .menu-wrap .menu>div {
+        padding: 0 3.5rem;
+    }
+    h1.find {
+        padding: 4rem 0 1rem;
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+    div.menu-wrap {
+        right: 4.5rem;
+    }
+    h1.find {
+        padding: 4rem 0 1rem;
+        font-size: 1.5rem;
+    }
 }
